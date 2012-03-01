@@ -14,7 +14,7 @@ class Feedback_Model extends ZP_Model {
 		$this->config("email");
 		
 		$this->Email = $this->core("Email");
-		$this->Email->setLibrary(_wEmailLibrary);
+		$this->Email->setLibrary("phpmailer");
 		
 		$this->Email->fromName  = _webName;
 		$this->Email->fromEmail = _webEmailSend;
@@ -84,12 +84,12 @@ class Feedback_Model extends ZP_Model {
 		}
 		
 		$values = array(
-			"Name"   	 => POST("name"),
-			"Email"   	 => POST("email"),
-			"Company"	 => "",
-			"Phone" 	 => "",
-			"Subject"  	 => "",
-			"Message" 	 => POST("message", "decode", FALSE),
+			"Name"       => POST("name"),
+			"Email"      => POST("email"),
+			"Company"    => "",
+			"Phone"      => "",
+			"Subject"    => "",
+			"Message"    => POST("message", "decode", FALSE),
 			"Start_Date" => now(4),
 			"Text_Date"  => now(2)
 		);
@@ -133,13 +133,4 @@ class Feedback_Model extends ZP_Model {
 		
 	}
 	
-	public function getNotifications() {
-		$data = $this->Db->call("getFeedbackNotifications()");
-		
-		if($data) {
-			return count($data);
-		}
-		
-		return 0;
-	}
 }

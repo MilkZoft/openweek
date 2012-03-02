@@ -11,16 +11,17 @@ class Feedback_Model extends ZP_Model {
 	public function __construct() {
 		$this->Db = $this->db();
 		
-		$this->config("email");
-		
+		$this->config("email", "feedback");
+
+		$this->helpers();
+	
 		$this->Email = $this->core("Email");
+		
 		$this->Email->setLibrary("phpmailer");
 		
 		$this->Email->fromName  = _webName;
 		$this->Email->fromEmail = _webEmailSend;
-		
-		$this->helpers();
-		
+
 		$this->table = "feedback";
 	}
 	
@@ -83,18 +84,15 @@ class Feedback_Model extends ZP_Model {
 			return getAlert("You need to write a message");
 		}
 		
-		$values = array(
+		$data = array(
 			"Name"       => POST("name"),
 			"Email"      => POST("email"),
-			"Company"    => "",
-			"Phone"      => "",
-			"Subject"    => "",
 			"Message"    => POST("message", "decode", FALSE),
 			"Start_Date" => now(4),
 			"Text_Date"  => now(2)
 		);
 		
-		$insert = $this->Db->insert($this->table, $values);
+		$insert = $this->Db->insert($this->table, $data);
 			
 		if(!$insert) {
 			return getAlert("Insert error");
@@ -130,7 +128,6 @@ class Feedback_Model extends ZP_Model {
 									<p><strong>'. __(_("Message")) .':</strong> <br /> ' . POST("message", "decode", FALSE) . '</p>									
 									';
 		$this->Email->send();
-		
 	}
 	
 }

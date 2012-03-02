@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: ZanPHP\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-02-29 20:23-0600\n"
-"PO-Revision-Date: 2012-02-29 20:24-0600\n"
+"PO-Revision-Date: 2012-03-01 22:00-0600\n"
 "Last-Translator: Carlos Santana <carlos@milkzoft.com>\n"
 "Language-Team: Carlos Santana <carlos@milkzoft.com>\n"
 "MIME-Version: 1.0\n"
@@ -13,18 +13,18 @@ msgstr ""
 "X-Poedit-Language: Spanish\n"
 "X-Poedit-Country: MEXICO\n"
 "X-Poedit-SourceCharset: utf-8\n"
-"X-Poedit-Basepath: /Applications/XAMPP/htdocs/ZanPHP\n"
+"X-Poedit-Basepath: /Applications/XAMPP/htdocs/openweek\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: www/applications/default/controllers/controller.default.php:20
-msgid "Hello World"
-msgstr "Hola Mundo"
+#: www/lib/themes/website/header.php:39
+msgid "About me"
+msgstr "Acerca de mi"
 
-#: www/lib/exceptions/exception.database.php:11
-msgid "An unknown error has occurred"
-msgstr ""
+#: www/lib/themes/website/header.php:40
+msgid "My Work"
+msgstr "Mis Trabajos"
 
-#: www/lib/exceptions/exception.database.php:15
-msgid "Connection error"
-msgstr ""
+#: www/lib/themes/website/header.php:40
+msgid "Contact me"
+msgstr "Contactame"
 

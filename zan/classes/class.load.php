@@ -475,12 +475,17 @@ class ZP_Load {
      */
 	public function library($name, $className = NULL, $params = array(), $application = NULL) {	
 		$lib = str_replace("library.", "", $name);
-		
-		if(isset($name) and $application !== NULL) {
+		$lib = str_replace("class.", "", $name);
+
+		if(isset($name) and $application) {
 			if(file_exists(_corePath . "/libraries/$application/$name.php")) {
 				include_once _corePath . "/libraries/$application/$name.php";	
 
-				return ($className and $params) ? ZP_Singleton::instance($className, $params) : TRUE;
+				return ($className) ? ZP_Singleton::instance($className, $params) : TRUE;
+			} elseif(file_exists(_corePath . "/libraries/$lib/$name.php")) {
+				include_once _corePath . "/libraries/$lib/$name.php";	
+
+				return ($className) ? ZP_Singleton::instance($className, $params) : TRUE;
 			} elseif(file_exists("www/applications/$application/libraries/library.$name.php")) {
 				include_once "www/applications/$application/libraries/library.$name.php";	
 			
@@ -493,7 +498,9 @@ class ZP_Load {
 			$name = strtolower($name);
 
 			if(file_exists(_corePath . "/libraries/$lib/$name.php")) {
-				include_once _corePath . "/libraries/$lib/$name.php";										
+				include_once _corePath . "/libraries/$lib/$name.php";
+
+				return ($className) ? ZP_Singleton::instance($className, $params) : TRUE;										
 			} else {
 				die("$name library doesn't exists");
 			}			

@@ -6,6 +6,8 @@
 	if(isMobile()) {
 		include "mobile/header.php";
 	} else {
+		$path = whichLanguage() === "English" ? _webBase . _sh . "es" : _webBase . _sh . "en";
+		$link = whichLanguage() === "English" ? getLanguage("Spanish", TRUE) : getLanguage("English", TRUE);
 ?>
 <!DOCTYPE html>
 <html lang="<?php print _webLang; ?>">
@@ -35,10 +37,10 @@
      				<div class="span7 offset2">
      					<nav>
 			                <ul>
-			                	<li><a href="#" class="current">About me</a></li>
-			     	            <li><a href="#">My Work</a></li>
-			     	            <li><a href="#">Blog</a></li>
-			                    <li><a href="#">Contact me</a></li>
+			                	<li><a href="<?php print path(); ?>" class="current"><?php print __(_("About me")); ?></a></li>
+			     	            <li><a href="<?php print path("works"); ?>"><?php print __(_("My Work")); ?></a></li>
+			                    <li><a href="<?php print path("feedback"); ?>"><?php print __(_("Contact me")); ?></a></li>
+			                    <li><a href="<?php print $path; ?>"><?php print  $link ?></a></li>
 			                </ul>
 			            </nav>
      				</div>

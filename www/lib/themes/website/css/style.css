@@ -40,6 +40,16 @@ nav ul li a {
 	color: #a60e0e;
 }
 
+nav ul li a:hover {
+	color: #333333;
+}
+
 footer p {
+	padding: 100px;
 	text-align: center;
+}
+
+nav ul li .current {
+	color: #333333;
+	text-decoration: underline;
 }

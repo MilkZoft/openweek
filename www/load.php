@@ -28,6 +28,8 @@ $helpers = array("i18n", "router", "benchmark", "exceptions", "string", "session
 
 $Load->helper($helpers);
 
+define("_webLang", whichLanguage(FALSE));
+
 if(_translation === "gettext") {
 	$languageFile = _dir ."/lib/languages/gettext/language.". whichLanguage(TRUE, TRUE) .".mo";
 		

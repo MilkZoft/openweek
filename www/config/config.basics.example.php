@@ -9,18 +9,17 @@ if(!defined("_access")) {
 /**
  * General
  */
-define("_webURL", "http://127.0.0.1/ZanPHP");
+define("_webURL", "http://127.0.0.1/openweek");
 define("_webName", "ZanPHP");
 define("_webTheme", "website");
 define("_webSituation", "Active");
 define("_webMessage", "Under construction");
 define("_webLanguage", "English");
-define("_webLang", "en");
 define("_autoRender", TRUE);
 
 define("_domain", FALSE);
 define("_modRewrite", FALSE);
-define("_defaultApplication", "default");
+define("_defaultApplication", "pages");
 define("_translation", "gettext");
 define("_sh", "/");
 define("_dot", ".");

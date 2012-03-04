@@ -6,7 +6,8 @@
 	if(isMobile()) {
 		include "mobile/header.php";
 	} else {
-		$path = whichLanguage() === "English" ? _webBase . _sh . "es" : _webBase . _sh . "en";
+		$home = _webBase . _sh . _webLang;
+		$path = whichLanguage() === "English" ? _webBase . _sh . "es" . _sh . segment(0, isLang()) : _webBase . _sh . "en" . _sh . segment(0, isLang());
 		$link = whichLanguage() === "English" ? getLanguage("Spanish", TRUE) : getLanguage("English", TRUE);
 ?>
 <!DOCTYPE html>
@@ -17,8 +18,20 @@
 		
 		<link href="<?php print _webURL . _sh . _www . "/lib/css/frameworks/bootstrap/bootstrap.css"; ?>" rel="stylesheet">
 		<link href="<?php print $this->themePath; ?>/css/style.css" rel="stylesheet">
-		<?php print $this->getCSS(); ?>
 		
+		<?php 
+			$this->CSS("default"); 
+			$this->CSS("www/lib/scripts/js/pretty-photo/css/prettyPhoto.css");
+			print $this->getCSS(); 
+			print $this->js("www/lib/scripts/js/jquery.js", NULL, NULL, TRUE);
+			print $this->js("www/lib/scripts/js/pretty-photo/js/jquery.prettyPhoto.js", NULL, NULL, TRUE);
+		?>
+		
+		<script type="text/javascript" charset="utf-8">
+			$(document).ready(function() {
+				$("a[rel^='prettyPhoto']").prettyPhoto();
+			});
+		</script>
 		<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 			<!--[if lt IE 9]>
 			  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -37,10 +50,10 @@
      				<div class="span7 offset2">
      					<nav>
 			                <ul>
-			                	<li><a href="<?php print path(); ?>" class="current"><?php print __(_("About me")); ?></a></li>
-			     	            <li><a href="<?php print path("works"); ?>"><?php print __(_("My Work")); ?></a></li>
-			                    <li><a href="<?php print path("feedback"); ?>"><?php print __(_("Contact me")); ?></a></li>
-			                    <li><a href="<?php print $path; ?>"><?php print  $link ?></a></li>
+			                	<li><a href="<?php print $home; ?>"<?php print currentPath(); ?>><?php print __(_("About me")); ?></a></li>
+			     	            <li><a href="<?php print path("works"); ?>"<?php print currentPath("works"); ?>><?php print __(_("My Work")); ?></a></li>
+			                    <li><a href="<?php print path("feedback"); ?>"<?php print currentPath("feedback"); ?>><?php print __(_("Contact me")); ?></a></li>
+			                    <li><a href="<?php print $path; ?>"><?php print $link ?></a></li>
 			                </ul>
 			            </nav>
      				</div>

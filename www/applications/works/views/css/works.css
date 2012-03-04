@@ -1,0 +1,14 @@
+a.preview {
+	position: relative;
+	float: left;
+	margin: 0px 0px 15px 0;
+	padding: 5px;
+	padding-bottom: 1px;
+   	background-color: white;
+	border: 1px solid #D6D6D6;
+}
+
+.box {
+	width: 300px;
+	height: 200px;
+}

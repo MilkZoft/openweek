@@ -7,10 +7,12 @@
 		include "mobile/footer.php";
 	} else {
 ?>
-      <footer>
-            <p>Open Week Education 2012 - www.codejobs.biz</p>
-         </footer>
-        </div>
+      			<footer>
+         			<p>Open Week Education 2012 - www.codejobs.biz</p>
+        		</footer>
+        	</div>
+
+        	<?php print $this->getJs(); ?>
     </body>
 </html>
 

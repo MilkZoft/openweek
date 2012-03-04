@@ -18,8 +18,12 @@ class Pages_Controller extends ZP_Controller {
 		$this->Pages_Model = $this->model("Pages_Model");
 	}
 	
-	public function index() {		
-		$this->defaultPage();
+	public function index($page = NULL) {
+		if($page) {
+			$this->page($page);
+		} else {
+			$this->defaultPage();
+		}
 	}
 
 	public function defaultPage() {

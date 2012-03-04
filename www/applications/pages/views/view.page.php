@@ -1,4 +1,4 @@
-<div class="pages">
+<div class="wrapper">
 	<h2><?php print $title; ?></h2>
 	
 	<p>

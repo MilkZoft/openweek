@@ -15,6 +15,12 @@ class Works_Model extends ZP_Model {
 		
 		$this->table = "works";
 	}
+
+	public function getWorks($type) {
+		$data = $this->Db->findBy("Type", $type, $this->table);
+		
+		return $data;
+	}
 	
 	public function cpanel($action, $limit = NULL, $order = "ID_Work DESC", $search = NULL, $field = NULL, $trash = FALSE) {		
 		if($action === "edit" or $action === "save") {

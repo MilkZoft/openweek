@@ -1,5 +1,6 @@
 <?php if(!defined("_access")) die("Error: You don't have permission to access here..."); ?>
 
+<div class="wrapper">
 	<form method="post" action="<?php print path("feedback"); ?>" enctype="multipart/form-data">
 		<fieldset>
 			<legend><?php print __(_("Feedback")); ?></legend>
@@ -35,3 +36,4 @@
 			</p>			
 		</fieldset>
 	</form>
+</div>

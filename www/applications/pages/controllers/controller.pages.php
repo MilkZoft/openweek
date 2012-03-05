@@ -36,6 +36,7 @@ class Pages_Controller extends ZP_Controller {
 		$data = $this->Pages_Model->getDefaultPage();
 
 		if($data) {
+			$vars["ID"]		  = $data[0]["ID_Page"];
 			$vars["title"]    = $data[0]["Title"];
 			$vars["content"]  = $data[0]["Content"];
 			$vars["view"]  	  = $this->view("page", TRUE);

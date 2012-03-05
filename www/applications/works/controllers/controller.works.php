@@ -32,7 +32,7 @@ class Works_Controller extends ZP_Controller {
 		if($data) {
 			$vars["works"] = $data;
 			$vars["view"]  = $this->view("works", TRUE);
-
+			
 			$this->template("content", $vars);
 		} else {
 			$this->template("error404");

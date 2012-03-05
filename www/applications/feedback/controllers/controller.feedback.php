@@ -22,9 +22,8 @@ class Feedback_Controller extends ZP_Controller {
 	}
 	
 	private function feedback() {
-		$this->CSS("feedback", $this->application);
-		$this->js("tiny-mce", NULL, "basic");
 		$this->title("Feedback");
+		$this->CSS("feedback", $this->application);
 		
 		if(POST("send")) {						
 			$this->vars["alert"] = $this->Feedback_Model->send();
@@ -33,6 +32,7 @@ class Feedback_Controller extends ZP_Controller {
 			$this->template("content", $this->vars);
 		} else {
 			$this->vars["view"] = $this->view("send", TRUE);
+			
 			$this->template("content", $this->vars);		
 		}
 	}

@@ -9,7 +9,7 @@ if(!defined("_access")) {
 /**
  * E-Mail
  */
-define("_gUser", "");
+define("_gUser", "@gmail.com");
 define("_gPwd", "");
 define("_gSSL", "ssl://smtp.gmail.com");
 define("_gPort", 465);

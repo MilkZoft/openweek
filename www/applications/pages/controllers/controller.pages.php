@@ -18,7 +18,9 @@ class Pages_Controller extends ZP_Controller {
 		$this->Pages_Model = $this->model("Pages_Model");
 	}
 	
-	public function index($page = NULL) {
+	public function index() {
+		$page = segment(1, isLang());
+		
 		if($page) {
 			$this->page($page);
 		} else {

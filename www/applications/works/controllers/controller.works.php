@@ -17,9 +17,7 @@ class Works_Controller extends ZP_Controller {
 		$this->Templates->theme(_webTheme);
 	}
 	
-	public function index() {
-		$type = segment(1, isLang()) ? segment(1, isLang()) : "Design";
-
+	public function index($type = "Design") {
 		$this->works($type);
 	}
 	

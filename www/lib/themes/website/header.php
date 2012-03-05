@@ -6,9 +6,15 @@
 	if(isMobile()) {
 		include "mobile/header.php";
 	} else {
-		$home = _webBase . _sh . _webLang;
-		$path = whichLanguage() === "English" ? _webBase . _sh . "es" . _sh . segment(0, isLang()) : _webBase . _sh . "en" . _sh . segment(0, isLang());
-		$link = whichLanguage() === "English" ? getLanguage("Spanish", TRUE) : getLanguage("English", TRUE);
+		$home  = _webBase . _sh . _webLang;
+		$path  = whichLanguage() === "English" ? _webBase . _sh . "es" . _sh . segment(0, isLang()) : _webBase . _sh . "en" . _sh . segment(0, isLang());
+		$link  = whichLanguage() === "English" ? getLanguage("Spanish", TRUE) : getLanguage("English", TRUE);
+		
+		if(SESSION("ZanUser")) {
+			$login = '<a href="'. path("users/logout") .'"'. currentPath("users/logout") .'>'. __(_("Logout")) .'</a>';
+		} else {
+			$login = '<a href="'. path("users/login") .'"'. currentPath("users/login") .'>'. __(_("Log in")) .'</a>';
+		} 
 ?>
 <!DOCTYPE html>
 <html lang="<?php print _webLang; ?>">
@@ -53,6 +59,7 @@
 			                	<li><a href="<?php print $home; ?>"<?php print currentPath(); ?>><?php print __(_("About me")); ?></a></li>
 			     	            <li><a href="<?php print path("works"); ?>"<?php print currentPath("works"); ?>><?php print __(_("My Work")); ?></a></li>
 			                    <li><a href="<?php print path("feedback"); ?>"<?php print currentPath("feedback"); ?>><?php print __(_("Contact me")); ?></a></li>
+			                    <li><?php print $login; ?></li>
 			                    <li><a href="<?php print $path; ?>"><?php print $link ?></a></li>
 			                </ul>
 			            </nav>

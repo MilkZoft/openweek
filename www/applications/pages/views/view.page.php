@@ -8,7 +8,7 @@
 	<?php
 		if(SESSION("ZanUser")) {
 		?>
-			<a href=""><?php print __(_("Edit")); ?></a>
+			<a href="<?php print path("pages/cpanel/edit/$ID"); ?>"><?php print __(_("Edit")); ?></a>
 		<?php
 		}
 	?>

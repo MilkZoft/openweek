@@ -47,6 +47,7 @@ function execute() {
 
 	$match   = FALSE;
 	$special = FALSE;
+	$params  = array();
 
 	if(file_exists("www/config/config.routes.php")) {
 		include "www/config/config.routes.php";
@@ -82,7 +83,6 @@ function execute() {
 			}
 		} else { 
 			$application = segment(0, isLang());
-			$params      = array();
 
 			if(segment(1, isLang())) { 
 				if(isController(segment(1, isLang()), segment(0, isLang()))) { 
@@ -90,8 +90,8 @@ function execute() {
 					$Controller     	   = getController($applicationController, $application);
 					$controllerFile        = getController($applicationController, $application, TRUE);
 				
-					if(segment(2, isLang()) and !isNumber(segment(2, isLang()))) {
-						$method = segment(2, isLang());	
+					if(segment(1, isLang()) and !isNumber(segment(1, isLang()))) {
+						$method = segment(1, isLang());	
 					} else {
 						$method = "index";	
 					}
@@ -149,7 +149,7 @@ function execute() {
 
 	$Controller     = isset($Controller) ? $Controller : getController(NULL, $application);
 	$controllerFile = ($applicationController) ? getController($applicationController, $application, TRUE) : getController(NULL, $application, TRUE);
-
+	
 	if(file_exists($controllerFile)) {
 		if(isset($method) and count($params) > 0) {
 			if(method_exists($Controller, $method)) {

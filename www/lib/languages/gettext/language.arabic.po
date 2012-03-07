@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ZanPHP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-10 18:37-0600\n"
-"PO-Revision-Date: 2012-02-10 18:37-0600\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2012-03-06 17:23-0600\n"
+"PO-Revision-Date: 2012-03-06 17:23-0600\n"
+"Last-Translator: Carlos Santana <carlos@milkzoft.com>\n"
 "Language-Team: Carlos Santana <carlos@santana.ws>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -15,3 +15,1422 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /Applications/XAMPP/htdocs/MuuCMS\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: www/applications/ads/controllers/controller.cpanel.php:163
+#: www/applications/blog/controllers/controller.cpanel.php:212
+msgid "Manage "
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:28
+#: www/applications/blog/views/view.add.php:26
+msgid "Title"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:33
+msgid "If you change the banner image, this image will be deleted"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:42
+msgid "Image"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:48
+msgid "Top"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:54
+msgid "Left"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:60
+msgid "Right"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:66
+msgid "Bottom"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:72
+msgid "Center"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:81
+msgid "Position"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:87
+msgid "URL"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:95
+msgid "Code"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:102
+#: www/applications/blog/views/view.add.php:70
+msgid "Yes"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:108
+#: www/applications/blog/views/view.add.php:71
+msgid "No"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:117
+msgid "Principal"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:123
+#: www/applications/blog/views/view.add.php:82
+msgid "Active"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:129
+#: www/applications/blog/views/view.add.php:83
+msgid "Inactive"
+msgstr ""
+
+#: www/applications/ads/views/view.add.php:138
+#: www/applications/blog/views/view.add.php:90
+msgid "Situation"
+msgstr ""
+
+#: www/applications/applications/models/model.applications.php:125
+msgid "Add"
+msgstr ""
+
+#: www/applications/applications/models/model.applications.php:137
+msgid "Trash"
+msgstr ""
+
+#: www/applications/applications/models/model.applications.php:139
+msgid "In trash"
+msgstr ""
+
+#: www/applications/blog/views/view.access.php:6
+msgid "Private post"
+msgstr ""
+
+#: www/applications/blog/views/view.access.php:9
+msgid "Post password"
+msgstr ""
+
+#: www/applications/blog/views/view.access.php:14
+msgid "Access"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:36
+msgid "Content"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:67
+msgid "Language of the post"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:78
+msgid "Enable Comments"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:97
+#: www/applications/blog/views/view.add.php:101
+msgid "Password"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:118
+msgid "Image for this post"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:129
+msgid "Mural image"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:138
+msgid "Current mural image"
+msgstr ""
+
+#: www/applications/blog/views/view.add.php:149
+msgid "Delete Mural"
+msgstr ""
+
+#: www/applications/blog/views/view.archive.php:13
+msgid "Archive"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:16
+msgid "Comments"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:53
+msgid "There are no comments for this post.Be the first to leave a comment!"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:75
+msgid "Name"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:80
+msgid "Email"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:85
+msgid "Website"
+msgstr ""
+
+#: www/applications/blog/views/view.comments.php:95
+msgid "Comment"
+msgstr ""
+
+#: www/applications/blog/views/view.post.php:16
+#: www/applications/blog/views/view.post.php:32
+#: www/applications/blog/views/view.posts.php:26
+#: www/applications/blog/views/view.posts.php:42
+msgid "and"
+msgstr ""
+
+#: www/applications/blog/views/view.post.php:42
+msgid "in"
+msgstr ""
+
+#: www/applications/blog/views/view.post.php:57
+#: www/applications/blog/views/view.posts.php:73
+msgid "Published"
+msgstr ""
+
+#: www/applications/blog/views/view.post.php:57
+#: www/applications/blog/views/view.posts.php:73
+msgid "by"
+msgstr ""
+
+#: www/applications/blog/views/view.post.php:61
+#: www/applications/blog/views/view.posts.php:77
+msgid "Tags"
+msgstr ""
+
+#: www/applications/categories/views/view.categories.php:4
+msgid "Click to show or hide"
+msgstr ""
+
+#: www/applications/categories/views/view.categories.php:5
+msgid "Categories"
+msgstr ""
+
+#: www/applications/categories/views/view.categories.php:16
+msgid "New category"
+msgstr ""
+
+#: www/applications/categories/views/view.categories.php:23
+msgid "Parent category"
+msgstr ""
+
+#: www/applications/categories/views/view.categories.php:29
+msgid "Add category"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:34
+msgid "Name of the Website"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:41
+msgid "URL of the Website"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:48
+#: www/applications/configuration/views/view.edit.php:55
+#: www/applications/configuration/views/view.edit.php:62
+#: www/applications/configuration/views/view.edit.php:69
+msgid "Slogan of the Website"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:76
+msgid "E-Mail for recieve notifications"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:83
+msgid "Email for send notifications"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:91
+msgid "Default theme"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:97
+msgid "Default application"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:117
+msgid "Comments validations"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:122
+msgid "User"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:128
+msgid "Administrator"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:137
+msgid "Accounts activation"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:163
+msgid "Message when the Website is inactive"
+msgstr ""
+
+#: www/applications/configuration/views/view.edit.php:167
+msgid "Languages"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:75
+#: www/applications/cpanel/helpers/helper.library.php:72
+msgid "Images library"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:79
+#: www/applications/cpanel/helpers/helper.library.php:76
+msgid "Documents library"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:89
+msgid "Do you want to delete the file?"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:214
+#: www/applications/cpanel/helpers/helper.library.php:183
+msgid "Make directory"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:232
+#: www/applications/cpanel/helpers/helper.library.php:156
+msgid "Go"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:245
+msgid "The new folders will be created and the files will be uploaded in"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:250
+#: www/applications/cpanel/classes/class.library.php:253
+#: www/applications/cpanel/helpers/helper.library.php:188
+#: www/applications/cpanel/helpers/helper.library.php:191
+msgid "Support files"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:271
+#: www/applications/cpanel/helpers/helper.cpanel.php:283
+#: www/applications/cpanel/helpers/helper.cpanel.php:285
+#: www/applications/cpanel/helpers/helper.library.php:208
+#: www/applications/cpanel/models/model.cpanel.php:114
+msgid "Delete"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:432
+msgid "Insert Image"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:436
+#: www/applications/cpanel/helpers/helper.library.php:319
+msgid "Preview image"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:457
+msgid "Insert file"
+msgstr ""
+
+#: www/applications/cpanel/classes/class.library.php:465
+#: www/applications/cpanel/helpers/helper.library.php:341
+msgid "Download file"
+msgstr ""
+
+#: www/applications/cpanel/controllers/controller.cpanel.php:46
+msgid "Last posts"
+msgstr ""
+
+#: www/applications/cpanel/controllers/controller.cpanel.php:47
+msgid "Last pages"
+msgstr ""
+
+#: www/applications/cpanel/controllers/controller.cpanel.php:48
+msgid "Last links"
+msgstr ""
+
+#: www/applications/cpanel/controllers/controller.cpanel.php:49
+msgid "Last users"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:34
+msgid "Total"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:173
+#: www/applications/cpanel/helpers/helper.cpanel.php:182
+#: www/applications/cpanel/helpers/helper.cpanel.php:189
+#: www/applications/cpanel/helpers/helper.cpanel.php:196
+#: www/applications/cpanel/helpers/helper.cpanel.php:213
+#: www/applications/cpanel/helpers/helper.cpanel.php:258
+msgid "Preview"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:277
+msgid "Select"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:278
+msgid "All"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:279
+msgid "None"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:282
+#: www/applications/cpanel/models/model.cpanel.php:113
+msgid "Restore"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:287
+#: www/applications/cpanel/models/model.cpanel.php:39
+#: www/applications/cpanel/models/model.cpanel.php:94
+#: www/applications/cpanel/models/model.cpanel.php:102
+msgid "Send to trash"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:618
+#: www/applications/cpanel/views/view.login.php:18
+msgid "Username"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:639
+msgid "Search"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:649
+msgid "Field"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:663
+msgid "Order"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:666
+msgid "Ascending"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:669
+msgid "Descending"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.cpanel.php:673
+msgid "Seek"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.library.php:184
+msgid "The new folders will be created and the files will be uploaded in:"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.library.php:212
+msgid "Upload"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.library.php:323
+msgid "Insert image"
+msgstr ""
+
+#: www/applications/cpanel/helpers/helper.routes.php:20
+#: www/applications/cpanel/helpers/helper.routes.php:28
+#: www/applications/cpanel/helpers/helper.routes.php:35
+#: www/applications/cpanel/helpers/helper.routes.php:41
+#: www/applications/cpanel/helpers/helper.routes.php:46
+#: www/applications/cpanel/helpers/helper.routes.php:48
+msgid "Home"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:38
+msgid "Validate comment"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:40
+#: www/applications/cpanel/models/model.cpanel.php:84
+msgid "Do you want to validate the comment?"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:41
+#: www/applications/cpanel/models/model.cpanel.php:54
+#: www/applications/cpanel/models/model.cpanel.php:65
+#: www/applications/cpanel/models/model.cpanel.php:74
+#: www/applications/cpanel/models/model.cpanel.php:85
+#: www/applications/cpanel/models/model.cpanel.php:96
+#: www/applications/cpanel/models/model.cpanel.php:103
+msgid "Do you want to send to the trash the record?"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:52
+msgid "Read Comment"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:53
+#: www/applications/cpanel/models/model.cpanel.php:64
+#: www/applications/cpanel/models/model.cpanel.php:73
+#: www/applications/cpanel/models/model.cpanel.php:83
+msgid "Send to Trash"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:63
+#: www/applications/cpanel/models/model.cpanel.php:72
+msgid "Read Message"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:82
+msgid "Validate Comment"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:93
+msgid "Edit"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:95
+msgid "Do you want to edit the record?"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:115
+msgid "Do you want to restore the record?"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:116
+msgid "Do you want to delete the record permanently?"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:201
+msgid "There are no new records"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:459
+#: www/applications/cpanel/models/model.cpanel.php:463
+msgid "Records founded"
+msgstr ""
+
+#: www/applications/cpanel/models/model.cpanel.php:461
+msgid "Record found"
+msgstr ""
+
+#: www/applications/cpanel/views/view.login.php:5
+msgid "Login"
+msgstr ""
+
+#: www/applications/cpanel/views/view.login.php:9
+msgid "Incorrect Login"
+msgstr ""
+
+#: www/applications/cpanel/views/view.login.php:14
+msgid "Authentification"
+msgstr ""
+
+#: www/applications/cpanel/views/view.login.php:28
+msgid "Connect"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:112
+msgid "Automatic response"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:114
+msgid "Your message has been sent successfully, we will contact you as soon as possible, thank you very much!"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:122
+msgid "New Message"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:124
+#: www/applications/feedback/models/model.feedback.php:130
+#: www/applications/feedback/views/view.read.php:52
+#: www/applications/feedback/views/view.send.php:26
+msgid "Message"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:127
+#: www/applications/feedback/views/view.read.php:47
+msgid "Company"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:128
+#: www/applications/feedback/views/view.read.php:42
+msgid "Phone"
+msgstr ""
+
+#: www/applications/feedback/models/model.feedback.php:129
+#: www/applications/feedback/views/view.read.php:37
+msgid "Subject"
+msgstr ""
+
+#: www/applications/feedback/views/view.add.php:4
+msgid "There are no new feedbacks"
+msgstr ""
+
+#: www/applications/feedback/views/view.read.php:32
+msgid "Date"
+msgstr ""
+
+#: www/applications/feedback/views/view.read.php:57
+#: www/applications/forums/views/view.forum.php:33
+#: www/applications/forums/views/view.forum.php:55
+msgid "Back"
+msgstr ""
+
+#: www/applications/feedback/views/view.send.php:6
+msgid "Feedback"
+msgstr ""
+
+#: www/applications/feedback/views/view.send.php:22
+msgid "E-Mail"
+msgstr ""
+
+#: www/applications/feedback/views/view.send.php:33
+msgid "Send"
+msgstr ""
+
+#: www/applications/forums/models/model.forums.php:121
+#: www/applications/forums/models/model.forums.php:222
+msgid "There are not replies"
+msgstr ""
+
+#: www/applications/forums/models/model.forums.php:277
+msgid "I posted on"
+msgstr ""
+
+#: www/applications/forums/views/view.add.php:33
+msgid "Description"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:20
+msgid "Welcome to the forum, "
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:22
+msgid "Feel free of generate new topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:27
+#: www/applications/forums/views/view.forum.php:54
+msgid "Options"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:29
+msgid "Post a topic"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:30
+#: www/applications/forums/views/view.forum.php:178
+msgid "New topic"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:33
+#: www/applications/forums/views/view.forum.php:55
+msgid "Forums"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:35
+#: www/applications/forums/views/view.forum.php:36
+msgid "Edit Profile"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:40
+msgid "Logout"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:48
+msgid "Welcome to the forums of"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:49
+msgid "please login to enjoy the forums or register if you don't have an account"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:62
+#: www/applications/forums/views/view.forum.php:63
+#: www/applications/forums/views/view.forum.php:212
+#: www/applications/forums/views/view.forum.php:213
+#: www/applications/forums/views/view.forum.php:295
+msgid "Sign up"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:81
+msgid "Topic"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:81
+msgid "Author"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:82
+msgid "Last Message"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:83
+#: www/applications/forums/views/view.forum.php:250
+#: www/applications/forums/views/view.forum.php:272
+msgid "Replies"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:84
+#: www/applications/forums/views/view.forum.php:251
+#: www/applications/forums/views/view.forum.php:273
+msgid "Visits"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:88
+msgid "Actions"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:134
+msgid "written by"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:157
+msgid "Do you want to edit the topic?"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:163
+msgid "Do you want to delete the topic?"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:173
+msgid "Reply"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:194
+msgid "There are no topics, be the first!"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:196
+#: www/applications/forums/views/view.forum.php:197
+msgid "Post a topic!"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:206
+msgid "There are no topics, be the first! but first"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:229
+msgid "Extra information"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:231
+msgid "Sign up, please"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:231
+msgid "A user avatar"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:240
+#: www/applications/forums/views/view.forum.php:269
+msgid "Hi there!, "
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:246
+#: www/applications/forums/views/view.forum.php:269
+msgid "Here are your statistics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:249
+#: www/applications/forums/views/view.forum.php:271
+msgid "Topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:257
+msgid "You can"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:258
+msgid "Create Forums"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:259
+msgid "create"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:260
+msgid "new forums"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:262
+#: www/applications/forums/views/view.forum.php:279
+msgid "You can create new topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:263
+#: www/applications/forums/views/view.forum.php:280
+msgid "You can reply to topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:264
+#: www/applications/forums/views/view.forum.php:281
+msgid "You can send private messages"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:278
+#: www/applications/forums/views/view.forum.php:299
+msgid "You can <strong>NOT</strong> create new forums"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:290
+msgid "Hi there!, you should"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:291
+msgid "login"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:292
+msgid "to enjoy full access to the forums"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:294
+msgid "If you don't have an account, you can create it"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:295
+msgid "here"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:300
+msgid "You can <strong>NOT</strong> create new topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:301
+msgid "You can <strong>NOT</strong> reply to topics"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:302
+msgid "You can <strong>NOT</strong> send private messages"
+msgstr ""
+
+#: www/applications/forums/views/view.forum.php:310
+msgid "Last registered users"
+msgstr ""
+
+#: www/applications/forums/views/view.forums.php:64
+msgid "Forum"
+msgstr ""
+
+#: www/applications/forums/views/view.forums.php:67
+msgid "Messages"
+msgstr ""
+
+#: www/applications/forums/views/view.forums.php:130
+msgid "Do you want to edit the forum?"
+msgstr ""
+
+#: www/applications/forums/views/view.forums.php:137
+msgid "Do you want to delete the forum?"
+msgstr ""
+
+#: www/applications/forums/views/view.newtopic.php:12
+msgid "New Topic"
+msgstr ""
+
+#: www/applications/forums/views/view.newtopic.php:16
+msgid "Edit Topic"
+msgstr ""
+
+#: www/applications/forums/views/view.newtopic.php:36
+#: www/applications/forums/views/view.reply.php:36
+msgid "Post in Twitter"
+msgstr ""
+
+#: www/applications/forums/views/view.newtopic.php:43
+#: www/applications/forums/views/view.reply.php:44
+msgid "Cancel"
+msgstr ""
+
+#: www/applications/forums/views/view.reply.php:11
+msgid "New Reply"
+msgstr ""
+
+#: www/applications/forums/views/view.reply.php:15
+msgid "Edit Reply"
+msgstr ""
+
+#: www/applications/forums/views/view.reply.php:43
+msgid "reply"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:20
+msgid "Welcome to this topic"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:24
+msgid "Feel free of reply to the topic"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:30
+msgid "Reply the topic"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:34
+#: www/applications/forums/views/view.topic.php:56
+msgid "Back to the forum"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:281
+msgid "Do you want to edit the reply?"
+msgstr ""
+
+#: www/applications/forums/views/view.topic.php:284
+msgid "Do you want to delete the reply?"
+msgstr ""
+
+#: www/applications/gallery/views/view.add.php:67
+#: www/applications/gallery/views/view.image.php:46
+msgid "Album"
+msgstr ""
+
+#: www/applications/gallery/views/view.add.php:67
+msgid "Write a album or select"
+msgstr ""
+
+#: www/applications/gallery/views/view.gallery.php:7
+#: www/applications/gallery/views/view.gallery.php:16
+#: www/applications/gallery/views/view.image.php:6
+msgid "Gallery"
+msgstr ""
+
+#: www/applications/gallery/views/view.gallery.php:11
+msgid "Images"
+msgstr ""
+
+#: www/applications/gallery/views/view.image.php:13
+msgid "Previous"
+msgstr ""
+
+#: www/applications/gallery/views/view.image.php:14
+msgid "Next"
+msgstr ""
+
+#: www/applications/links/views/view.add.php:34
+msgid "Follow"
+msgstr ""
+
+#: www/applications/links/views/view.add.php:37
+msgid "Web Friends"
+msgstr ""
+
+#: www/applications/links/views/view.add.php:38
+msgid "Directory"
+msgstr ""
+
+#: www/applications/multimedia/views/view.add.php:29
+msgid "Upload files"
+msgstr ""
+
+#: www/applications/multimedia/views/view.add.php:34
+msgid "Drag & drop your files here"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:21
+msgid "Question"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:24
+msgid "Answers"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:24
+msgid "Empty answers not be added"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:45
+msgid "Simple"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:46
+msgid "Multiple"
+msgstr ""
+
+#: www/applications/polls/views/view.add.php:49
+msgid "Type"
+msgstr ""
+
+#: www/applications/twitter/views/view.form.php:4
+msgid "Your comment"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:356
+#: www/applications/users/models/model.users.php:361
+#: www/applications/users/models/model.users.php:393
+#: www/applications/users/models/model.users.php:397
+msgid "Recover Password"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:358
+#: www/applications/users/models/model.users.php:395
+msgid "To recover your password, you need to access here"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:360
+#: www/applications/users/models/model.users.php:396
+#: www/applications/users/models/model.users.php:469
+#: www/applications/users/models/model.users.php:476
+msgid "You need access to this link:"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:464
+msgid "Account Activation"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:468
+#: www/applications/users/models/model.users.php:475
+msgid "Your account has been created"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:470
+#: www/applications/users/models/model.users.php:477
+msgid "Activate account"
+msgstr ""
+
+#: www/applications/users/models/model.users.php:485
+msgid "The account has been created correctly, we will send you an e-mail so you can activate your account"
+msgstr ""
+
+#: www/applications/users/views/view.add.php:29
+msgid "Privilege"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:11
+msgid "Profile"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:77
+msgid "Main Information"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:93
+msgid "Rank"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:97
+msgid "Join Date"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:113
+msgid "Personal Information"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:127
+msgid "Gender"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:135
+msgid "Birthday"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:151
+msgid "Telephone"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:159
+msgid "User Statistics"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:164
+msgid "Receive Messages"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:166
+msgid "Subscribed"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:179
+msgid "User Location"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:186
+msgid "Country"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:193
+msgid "District"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:201
+msgid "Town"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:218
+msgid "Social Information"
+msgstr ""
+
+#: www/applications/users/views/view.editprofile.php:224
+msgid "Sign"
+msgstr ""
+
+#: www/applications/users/views/view.errorProfile.php:4
+msgid "The profile that you are looking for doesn't exists"
+msgstr ""
+
+#: www/applications/users/views/view.login.php:43
+#: www/applications/users/views/view.login.php:44
+#: www/applications/users/views/view.login.php:53
+#: www/applications/users/views/view.login.php:54
+msgid "Lost your password?"
+msgstr ""
+
+#: www/applications/users/views/view.login.php:47
+#: www/applications/users/views/view.login.php:48
+msgid "Register"
+msgstr ""
+
+#: www/applications/users/views/view.login.php:67
+msgid "You have been authentified correctly!"
+msgstr ""
+
+#: www/applications/users/views/view.login.php:71
+msgid "Click on the close button below, or out of the box, to enjoy the forums!"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:12
+#: www/applications/users/views/view.recover.php:62
+msgid "Recover"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:22
+msgid "Change your Password"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:26
+msgid "New Password"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:31
+msgid "Confirm Password"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:36
+msgid "Change Password"
+msgstr ""
+
+#: www/applications/users/views/view.recover.php:48
+msgid "To recover your password, please enter your username or your e-mail"
+msgstr ""
+
+#: www/applications/users/views/view.register.php:53
+msgid "Click on the close button below, or out of the box, to return to the forums"
+msgstr ""
+
+#: www/applications/videos/views/view.add.php:26
+msgid "Add Video"
+msgstr ""
+
+#: www/applications/videos/views/view.add.php:42
+msgid "YouTube"
+msgstr ""
+
+#: www/applications/videos/views/view.add.php:70
+msgid "There were no results for this search"
+msgstr ""
+
+#: www/applications/videos/views/view.add.php:81
+#: www/applications/videos/views/view.add.php:83
+msgid "Next results"
+msgstr ""
+
+#: www/applications/videos/views/view.add.php:108
+msgid "State"
+msgstr ""
+
+#: www/applications/works/views/view.add.php:33
+msgid "Add Work"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:135
+#: www/helpers/helper.scripts.php:177
+msgid "The file size exceed the permited limit"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:139
+#: www/helpers/helper.scripts.php:181
+msgid "An error has ocurred"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:143
+#: www/helpers/helper.scripts.php:185
+msgid "The file type is not permited"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:147
+#: www/helpers/helper.scripts.php:189
+msgid "A problem occurred when trying to upload file"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:151
+#: www/helpers/helper.scripts.php:193
+msgid "The file already exists"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:155
+#: www/helpers/helper.scripts.php:197
+msgid "Successfully uploaded file"
+msgstr ""
+
+#: www/helpers/helper.scripts.php:207
+msgid "Disable Javascript"
+msgstr ""
+
+#: www/lib/exceptions/exception.database.php:11
+msgid "An unknown error has occurred"
+msgstr ""
+
+#: www/lib/exceptions/exception.database.php:15
+msgid "Connection error"
+msgstr ""
+
+#: www/lib/languages/words.php:2
+msgid "Ads"
+msgstr ""
+
+#: www/lib/languages/words.php:3
+msgid "Configuration"
+msgstr ""
+
+#: www/lib/languages/words.php:4
+msgid "Links"
+msgstr ""
+
+#: www/lib/languages/words.php:5
+msgid "Pages"
+msgstr ""
+
+#: www/lib/languages/words.php:6
+msgid "Polls"
+msgstr ""
+
+#: www/lib/languages/words.php:7
+msgid "Users"
+msgstr ""
+
+#: www/lib/languages/words.php:8
+msgid "Works"
+msgstr ""
+
+#: www/lib/languages/words.php:9
+msgid "Results"
+msgstr ""
+
+#: www/lib/languages/words.php:10
+msgid "record"
+msgstr ""
+
+#: www/lib/languages/words.php:11
+msgid "Manage Users"
+msgstr ""
+
+#: www/lib/languages/words.php:12
+msgid "Action"
+msgstr ""
+
+#: www/lib/languages/words.php:13
+msgid "Manage Ads"
+msgstr ""
+
+#: www/lib/languages/words.php:14
+msgid "records"
+msgstr ""
+
+#: www/lib/languages/words.php:15
+msgid "Save"
+msgstr ""
+
+#: www/lib/languages/words.php:16
+msgid "Manage Feedback"
+msgstr ""
+
+#: www/lib/languages/words.php:17
+msgid "Manage Polls"
+msgstr ""
+
+#: www/lib/languages/words.php:18
+msgid "Manage Blog"
+msgstr ""
+
+#: www/lib/languages/words.php:19
+msgid "Manage Categories"
+msgstr ""
+
+#: www/lib/languages/words.php:20
+msgid "posts"
+msgstr ""
+
+#: www/lib/languages/words.php:21
+msgid "Application"
+msgstr ""
+
+#: www/lib/languages/words.php:22
+msgid "Language"
+msgstr ""
+
+#: www/lib/languages/words.php:23
+msgid "feedback"
+msgstr ""
+
+#: www/lib/languages/words.php:24
+msgid "Manage Forums"
+msgstr ""
+
+#: www/lib/languages/words.php:25
+msgid "Support"
+msgstr ""
+
+#: www/lib/languages/words.php:26
+msgid "Title is required"
+msgstr ""
+
+#: www/lib/languages/words.php:27
+msgid "Invalid URL"
+msgstr ""
+
+#: www/lib/languages/words.php:28
+msgid "You need to upload an image or write the ad code"
+msgstr ""
+
+#: www/lib/languages/words.php:29
+msgid "The ad has been saved correctly"
+msgstr ""
+
+#: www/lib/languages/words.php:30
+msgid "Deleted"
+msgstr ""
+
+#: www/lib/languages/words.php:31
+msgid "Spanish"
+msgstr ""
+
+#: www/lib/languages/words.php:32
+msgid "English"
+msgstr ""
+
+#: www/lib/languages/words.php:33
+msgid "Arabic"
+msgstr ""
+
+#: www/lib/languages/words.php:34
+msgid "Chinese"
+msgstr ""
+
+#: www/lib/languages/words.php:35
+msgid "French"
+msgstr ""
+
+#: www/lib/languages/words.php:36
+msgid "Blog"
+msgstr ""
+
+#: www/lib/themes/cpanel/footer.php:6
+msgid "All rights reserved"
+msgstr ""
+
+#: www/lib/themes/cpanel/footer.php:6
+msgid "Powered by"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:33
+#: www/lib/themes/cpanel/header.php:47
+msgid "Go back"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:34
+msgid "Welcome"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:35
+msgid "Online users"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:36
+msgid "Registered users"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:37
+msgid "Last user"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:82
+msgid "Gallery Comments"
+msgstr ""
+
+#: www/lib/themes/cpanel/header.php:92
+msgid "You are in"
+msgstr ""
+
+#: www/lib/themes/cpanel/left.php:3
+msgid "Applications"
+msgstr ""
+
+#: zan/classes/class.files.php:113
+msgid "Text File"
+msgstr ""
+
+#: zan/classes/class.files.php:114
+#: zan/classes/class.files.php:115
+msgid "Document File"
+msgstr ""
+
+#: zan/classes/class.files.php:116
+msgid "PDF File"
+msgstr ""
+
+#: zan/classes/class.files.php:117
+#: zan/classes/class.files.php:118
+msgid "Power Point File"
+msgstr ""
+
+#: zan/classes/class.files.php:119
+msgid "WinRAR File"
+msgstr ""
+
+#: zan/classes/class.files.php:120
+msgid "ISO File"
+msgstr ""
+
+#: zan/classes/class.files.php:121
+#: zan/classes/class.files.php:122
+#: zan/classes/class.files.php:123
+msgid "Excel File"
+msgstr ""
+
+#: zan/classes/class.files.php:124
+msgid "WinZIP File"
+msgstr ""
+
+#: zan/classes/class.files.php:125
+msgid "7z File"
+msgstr ""
+
+#: zan/classes/class.files.php:126
+#: zan/classes/class.files.php:127
+msgid "Adobe Illustrator File"
+msgstr ""
+
+#: zan/classes/class.files.php:128
+msgid "Corel Draw File"
+msgstr ""
+
+#: zan/classes/class.files.php:129
+#: zan/classes/class.files.php:130
+#: zan/classes/class.files.php:131
+#: zan/classes/class.files.php:132
+msgid "Executable File"
+msgstr ""
+
+#: zan/classes/class.files.php:276
+msgid "Upload success!"
+msgstr ""
+
+#: zan/classes/class.files.php:278
+msgid "Permission problems!"
+msgstr ""
+
+#: zan/classes/class.files.php:282
+msgid "Upload failed!"
+msgstr ""
+

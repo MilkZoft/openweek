@@ -26,6 +26,7 @@ class Feedback_Model extends ZP_Model {
 	}
 	
 	public function send() {
+		
 		if(!POST("name")) {
 			return getAlert("You need to write your name");
 		} elseif(!isEmail(POST("email"))) {
@@ -37,6 +38,8 @@ class Feedback_Model extends ZP_Model {
 		$data = array(
 			"Name"       => POST("name"),
 			"Email"      => POST("email"),
+			"Country"    => POST("countries"),
+			"City"       => POST("city"),
 			"Message"    => POST("message", "decode", FALSE),
 			"Start_Date" => now(4),
 			"Text_Date"  => now(2)

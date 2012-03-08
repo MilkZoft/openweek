@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 05-03-2012 a las 03:54:38
+-- Tiempo de generación: 08-03-2012 a las 04:02:09
 -- Versión del servidor: 5.1.44
 -- Versión de PHP: 5.3.1
 
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `zan_feedback` (
   `Text_Date` varchar(60) NOT NULL,
   `Situation` varchar(15) NOT NULL DEFAULT 'Unread',
   PRIMARY KEY (`ID_Feedback`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=17 ;
 
 --
 -- Volcar la base de datos para la tabla `zan_feedback`
@@ -59,7 +59,9 @@ INSERT INTO `zan_feedback` (`ID_Feedback`, `Name`, `Email`, `Company`, `Phone`, 
 (11, 'Carlos Santana Roldán', 'czantany@hotmail.com', '', '', '', '', '', 'Hòla qué tál', 1330668164, 'Viernes, 02 de Marzo de 2012', 'Unread'),
 (12, 'asdsad', 'czantany@hotmail.com', '', '', '', '', '', 'aaasdàsdàs`dsa`dQ·%"·$·&%/%/', 1330668307, 'Friday, March 02, 2012', 'Unread'),
 (13, 'Cristina Rojas', 'czantany@hotmail.com', '', '', '', '', '', 'Hola soy Criss :)', 1330846151, 'Sunday, March 04, 2012', 'Unread'),
-(14, 'Cristina Rojas', 'czantany@hotmail.com', '', '', '', '', '', 'Hola soy Criss :)', 1330846212, 'Sunday, March 04, 2012', 'Unread');
+(14, 'Cristina Rojas', 'czantany@hotmail.com', '', '', '', '', '', 'Hola soy Criss :)', 1330846212, 'Sunday, March 04, 2012', 'Unread'),
+(15, 'kjnljnln', 'carlos@milkzoft.com', '', '', '', '', '', 'Hola me gustaría comprar una pagina Web', 1331173837, 'Jueves, 08 de Marzo de 2012', 'Unread'),
+(16, 'Carlos ', 'czantany@hotmail.com', '', '', '', '', '', 'sadsadasdasdasd', 1331173983, 'Jueves, 08 de Marzo de 2012', 'Unread');
 
 -- --------------------------------------------------------
 
@@ -85,6 +87,29 @@ INSERT INTO `zan_pages` (`ID_Page`, `Title`, `Slug`, `Content`, `Principal`, `La
 (1, 'About me', 'about-me', '<p><img style="float: left; padding-right: 10px;" src="http://127.0.0.1/openweek/www/lib/files/images/uploaded/carlos.png" alt="Carlos Santana" width="201" height="250" /></p>\r\n\r\n<p><h2>Carlos Santana</h2></p>\r\n\r\n<p><em>Web Developer</em></p>\r\n\r\n<p><em>24 years old</em></p>\r\n\r\n<p><em>México</em></p>\r\n\r\n\r\n<p><strong>Email:</strong> carlos@milkzoft.com</p>\r\n\r\n<p><strong>Skype:</strong> MilkZoft</p>\r\n\r\n<p><strong>Twitter:</strong> @czantany</p>\r\n\r\n<h3>Passionate about developing Web applications and new technologies, creator and founder of the framework of MilkZoft ZanPHP.</h3>', 1, 'English'),
 (2, 'Acerca de mi', 'acerca-de-mi', '<p><img style="float: left; padding-right: 10px;" src="http://127.0.0.1/openweek/www/lib/files/images/uploaded/carlos.png" alt="Carlos Santana" width="201" height="250" /></p>\r\n\r\n<p><h2>Carlos Santana</h2></p>\r\n\r\n<p><em>Web Developer</em></p>\r\n\r\n<p><em>24 años de edad</em></p>\r\n\r\n<p><em>México</em></p>\r\n\r\n\r\n<p><strong>Email:</strong> carlos@milkzoft.com</p>\r\n\r\n<p><strong>Skype:</strong> MilkZoft</p>\r\n\r\n<p><strong>Twitter:</strong> @czantany</p>\r\n\r\n<h3>Apasionado por el desarrollo de aplicaciones Web y las nuevas tecnologías, creador del framework ZanPHP y fundador de MilkZoft.</h3>', 1, 'Spanish'),
 (3, 'Prueba', 'prueba', 'prueba', 0, 'English');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `zan_users`
+--
+
+CREATE TABLE IF NOT EXISTS `zan_users` (
+  `ID_User` mediumint(8) unsigned NOT NULL AUTO_INCREMENT,
+  `Username` varchar(30) NOT NULL,
+  `Pwd` varchar(40) NOT NULL,
+  `Email` varchar(45) NOT NULL,
+  `Privilege` varchar(50) NOT NULL DEFAULT 'Member',
+  `Situation` varchar(15) NOT NULL DEFAULT 'Active',
+  PRIMARY KEY (`ID_User`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+
+--
+-- Volcar la base de datos para la tabla `zan_users`
+--
+
+INSERT INTO `zan_users` (`ID_User`, `Username`, `Pwd`, `Email`, `Privilege`, `Situation`) VALUES
+(1, 'admin', 'b9223847e1566884893656e84798ff39cea2b8c4', 'carlos@milkzoft.com', 'Super Admin', 'Active');
 
 -- --------------------------------------------------------
 

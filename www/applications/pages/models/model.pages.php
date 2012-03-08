@@ -15,7 +15,7 @@ class Pages_Model extends ZP_Model {
 		
 		$this->table = "pages";
 
-		$this->language = whichLanguage();
+		$this->language = whichLanguage(); 
 	}
 	
 	public function getDefaultPage() {

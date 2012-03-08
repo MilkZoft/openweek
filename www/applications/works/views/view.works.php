@@ -7,8 +7,6 @@
 	<div class="row">
 <?php
 	if(is_array($works)) {
-		$i = 1;
-
 		foreach($works as $work) {
 			$box = $work["Type"] === "Development" ? "box" : NULL;
 ?>
@@ -31,7 +29,6 @@
 ?>
 		      	</div>
 <?php
-			$i++;
 		}
 	}
 ?>

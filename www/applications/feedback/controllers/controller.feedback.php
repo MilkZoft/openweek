@@ -26,19 +26,16 @@ class Feedback_Controller extends ZP_Controller {
 		$this->CSS("feedback", $this->application);
 		$this->js("actions", $this->application);
 		
-		$this->vars["countries"] = $this->Feedback_Model->getCountries();
-		
-					
-		$this->vars["alert"] = $this->Feedback_Model->send();
-		$this->vars["view"]  = $this->view("send", TRUE);
-		$this->vars["view"]  = $this->view("send", TRUE);
+		if(POST("send")) {						
+			$vars["alert"] = $this->Feedback_Model->send();
+			$vars["view"]  = $this->view("send", TRUE);
 			
-		$this->template("content", $this->vars);		
-	}
-	
-	/*
-	public function getCities($country) {
-		print $this->Feedback_Model->getCities($country);
+			$this->template("content", $vars);
+		} else {
+			$vars["view"] = $this->view("send", TRUE);
+			
+			$this->template("content", $vars);		
+		}
 	}
 	*/
 }

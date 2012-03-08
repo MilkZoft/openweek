@@ -26,7 +26,7 @@ class Feedback_Controller extends ZP_Controller {
 		$this->CSS("feedback", $this->application);
 		$this->js("actions", $this->application);
 		
-		$this->vars["countries"] = $this->Feedback_Model->getCountries();
+		$vars["countries"] = $this->Feedback_Model->getCountries();
 		
 		if(POST("send")) {						
 			$vars["alert"] = $this->Feedback_Model->send();

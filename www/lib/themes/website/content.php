@@ -6,7 +6,6 @@
 	if(isMobile()) {
 		include "mobile/content.php";
 	} else {
-
 	?>
 		<section id="content">
 			<?php $this->load(isset($view) ? $view : NULL, TRUE); ?>

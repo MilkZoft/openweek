@@ -9,7 +9,7 @@ if(!defined("_access")) {
 /**
  * E-Mail
  */
-define("_gUser", "@gmail.com");
-define("_gPwd", "");
+define("_gUser", "openeducationw@gmail.com");
+define("_gPwd", "week1324");
 define("_gSSL", "ssl://smtp.gmail.com");
 define("_gPort", 465);

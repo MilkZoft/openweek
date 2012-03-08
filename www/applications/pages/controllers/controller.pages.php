@@ -18,9 +18,7 @@ class Pages_Controller extends ZP_Controller {
 		$this->Pages_Model = $this->model("Pages_Model");
 	}
 	
-	public function index() {
-		$page = segment(1, isLang());
-		
+	public function index($page = NULL) {		
 		if($page) {
 			$this->page($page);
 		} else {
@@ -34,7 +32,7 @@ class Pages_Controller extends ZP_Controller {
 		$this->CSS("pages", $this->application);
 
 		$data = $this->Pages_Model->getDefaultPage();
-
+		
 		if($data) {
 			$vars["ID"]		  = $data[0]["ID_Page"];
 			$vars["title"]    = $data[0]["Title"];

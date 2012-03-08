@@ -12,7 +12,7 @@ class Feedback_Controller extends ZP_Controller {
 		$this->Feedback_Model = $this->model("Feedback_Model");
 		$this->Templates 	  = $this->core("Templates");
 		
-		$this->application = "feedback";
+		$this->application = $this->app("feedback");
 		
 		$this->Templates->theme(_webTheme);
 	}
@@ -26,14 +26,14 @@ class Feedback_Controller extends ZP_Controller {
 		$this->CSS("feedback", $this->application);
 		
 		if(POST("send")) {						
-			$this->vars["alert"] = $this->Feedback_Model->send();
-			$this->vars["view"]  = $this->view("send", TRUE);
+			$vars["alert"] = $this->Feedback_Model->send();
+			$vars["view"]  = $this->view("send", TRUE);
 			
-			$this->template("content", $this->vars);
+			$this->template("content", $vars);
 		} else {
-			$this->vars["view"] = $this->view("send", TRUE);
+			$vars["view"] = $this->view("send", TRUE);
 			
-			$this->template("content", $this->vars);		
+			$this->template("content", $vars);		
 		}
 	}
 }

@@ -8,17 +8,17 @@ if(!defined("_access")) {
 
 $routes = array(
 	0 => array(
-			"pattern"	  => "/^about/",
+			"pattern"	  => "/^test/",
 			"application" => "pages",
 			"controller"  => "pages",
 			"method"	  => "page",
-			"params"	  => array("about-me")
+			"params"	  => array("test")
 		),
 	1 => array(
-			"pattern"	  => "/^acerca/",
+			"pattern"	  => "/^prueba/",
 			"application" => "pages",
 			"controller"  => "pages",
 			"method"	  => "page",
-			"params"	  => array("acerca-de-mi", "Spanish")
+			"params"	  => array("prueba", "Spanish")
 		),
 );

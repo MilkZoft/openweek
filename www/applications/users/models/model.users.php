@@ -30,12 +30,10 @@ class Users_Model extends ZP_Model {
 			$password = SESSION("ZanUserPwd");	
 		} else {			
 			$username = POST("username");
-			$password = POST("password", "encrypt");
+			$password = encrypt(POST("password"));
 		}
 		
-		$this->Db->table($this->table);
-	
-		$data = $this->Db->findBySQL("Username = '$username' AND Pwd = '$password' AND Privilege != 'Member'");
+		$data = $this->Db->findBySQL("Username = '$username' AND Pwd = '$password' AND Privilege = 'Super Admin'", $this->table);
 
 		if($data) {
 			return TRUE;

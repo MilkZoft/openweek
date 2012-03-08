@@ -25,56 +25,6 @@ class Feedback_Model extends ZP_Model {
 		$this->table = "feedback";
 	}
 	
-	public function cpanel($action, $limit = NULL, $order = "ID_Feedback DESC", $search = NULL, $field = NULL, $trash = FALSE) {
-		if($action === "edit" or $action === "save") {
-			$validation = $this->editOrSave();
-			
-			if($validation) {
-				return $validation;
-			}
-		}
-		
-		if($action === "all") {
-			return $this->all($trash, "ID_Feedback DESC", $limit);
-		} elseif($action === "edit") {
-			return $this->edit();															
-		} elseif($action === "save") {
-			return $this->save();
-		} elseif($action === "search") {
-			return $this->search($search, $field);
-		}
-	}
-	
-	private function all($trash, $order, $limit) {
-		if(!$trash) {
-			if(SESSION("ZanUserPrivilege") === _super) {
-				$data = $this->Db->findBySQL("Situation != 'Deleted'", $this->table, NULL, $order, $limit);
-			} else {
-				$data = $this->Db->findBySQL("ID_User = '" . SESSION("ZanUserID") ."' AND Situation != 'Deleted'", $this->table, NULL, $order, $limit);
-			}	
-		} else {
-			if(SESSION("ZanUserPrivilege") === _super) {
-				$data = $this->Db->findBy("Situation", "Deleted", $this->table, NULL, $order, $limit);
-			} else {
-				$data = $this->Db->findBySQL("ID_User = '". SESSION("ZanUserID") ."' AND Situation = 'Deleted'", $this->table, NULL, $order, $limit);
-			}
-		}
-		
-		return $data;	
-	}
-	
-	public function read($ID = false, $situation = "Read") {
-		if($ID) {
-			$this->Db->update($this->table, array("Situation" => $situation), $ID);
-		}
-	}
-	
-	public function getByID($ID) {
-		$data = $this->Db->find($ID, $this->table);
-		
-		return $data;
-	}
-	
 	public function send() {
 		if(!POST("name")) {
 			return getAlert("You need to write your name");
@@ -132,11 +82,13 @@ class Feedback_Model extends ZP_Model {
 	
 	public function getCountries() {
 		$countries = $this->Db->query("SELECT DISTINCT (Country) FROM zan_world ORDER BY Country");
+		
 		return $countries;
 	}
 	
 	public function getCities($country) {
 		$cities = $this->Db->query("SELECT District FROM zan_world WHERE Country = '$country' ORDER BY Country");
+		
 		return json_encode($cities);
 	}
 	

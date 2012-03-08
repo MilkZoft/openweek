@@ -31,15 +31,14 @@ class Feedback_Controller extends ZP_Controller {
 					
 		$this->vars["alert"] = $this->Feedback_Model->send();
 		$this->vars["view"]  = $this->view("send", TRUE);
-			
-		$this->vars["view"] = $this->view("send", TRUE);
+		$this->vars["view"]  = $this->view("send", TRUE);
 			
 		$this->template("content", $this->vars);		
 	}
 	
-	private function getCities() {
-		____($_POST);
-		____($this->Feedback_Model->getCities($country));
-		
+	/*
+	public function getCities($country) {
+		print $this->Feedback_Model->getCities($country);
 	}
+	*/
 }

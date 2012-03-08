@@ -8,22 +8,18 @@ if(!defined("_access")) {
 
 class Ajax_Controller extends ZP_Controller {
 	
-	public function __construct() {}
-		
-	public function getCountries() {
-		if(!POST("category")) {
-			$vars["error"] = __("You need write category");
-		} elseif(!POST("language")) {
-			$vars["error"] = __("You need select language");
-		}
-		
-		if(!isset($vars["error"])) {
-			$this->Feedback_Model = $this->model("Categories_Model");
-			
-			$vars["response"] = $this->Feedback_Model->save();
-		}
-		
-		print json_encode($vars);
+	public function __construct() {
+		$this->Feedback_Model = $this->model("Feedback_Model");
+		$this->Templates 	  = $this->core("Templates");
+		$this->helper("forms");
+		$this->application = "feedback";
 	}
-
+	
+	public function index($country) {
+		print $this->Feedback_Model->getCities($country);
+	}
+		
+	public function getCities($country) {
+		print $this->Feedback_Model->getCities($country);
+	}
 }

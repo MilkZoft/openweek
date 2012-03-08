@@ -136,9 +136,8 @@ class Feedback_Model extends ZP_Model {
 	}
 	
 	public function getCities($country) {
-		____("a");
-		$cities = $this->Db->query('SELECT District FROM zan_world WHERE Country ='.$country.' ORDER BY Country');
-		return $cities;
+		$cities = $this->Db->query("SELECT District FROM zan_world WHERE Country = '$country' ORDER BY Country");
+		return json_encode($cities);
 	}
 	
 }

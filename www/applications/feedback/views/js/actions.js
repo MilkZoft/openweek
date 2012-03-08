@@ -7,16 +7,24 @@ $(document).on("ready", function(){
 	$("#countries").change(function(){
 		var val = $(this).find(":selected").val();
 		
-		$.ajax({
-			type 		: "POST",
-			url			: "feedback/getCities/",
-			data  		:  val,
-			dataType	: "json",
+		$("#city").empty();
 		
-			success: function(data) {
-				console.log(data);
-			}
-		});
+		if(val !== "") {
+			$.ajax({
+				type 		: "POST",
+				url			: "feedback/ajax/getcities/"+val,
+				dataType	: "json",
+			
+				success: function(data) {
+					$.each(data,function(index, value){
+						$("#city").append($("<option/>", { value: value.District, text: value.District }));
+					});
+				
+				}
+			});
+		} else {
+			$("#city").append($("<option/>", { value: "", text: "Debe seleccionar un País" }));
+		}
 	});
 	
 });

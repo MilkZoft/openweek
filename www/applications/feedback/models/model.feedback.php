@@ -130,4 +130,15 @@ class Feedback_Model extends ZP_Model {
 		$this->Email->send();
 	}
 	
+	public function getCountries() {
+		$countries = $this->Db->query("SELECT DISTINCT (Country) FROM zan_world ORDER BY Country");
+		return $countries;
+	}
+	
+	public function getCities($country) {
+		____("a");
+		$cities = $this->Db->query('SELECT District FROM zan_world WHERE Country ='.$country.' ORDER BY Country');
+		return $cities;
+	}
+	
 }

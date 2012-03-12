@@ -1,4 +1,20 @@
 <?php if(!defined("_access")) die("Error: You don't have permission to access here..."); ?>
+<?php
+	
+	$options[0]["option"] = "Seleccione un País"; 
+	$options[0]["selected"] = FALSE; 
+	$options[0]["value"] = ""; 	
+	
+	$i = 1;
+	foreach($countries as $country) {
+
+		$options[$i]["option"]   = $country["Country"]; 
+		$options[$i]["selected"] = FALSE; 
+		$options[$i]["value"]    = $country["Country"]; 
+		$i++;	
+	}
+
+?>
 
 <div class="wrapper">
 	<form method="post" action="<?php print path("feedback"); ?>" enctype="multipart/form-data">
@@ -25,6 +41,18 @@
 				&raquo; <?php print __(_("Phone")); ?><br />
 				<input name="phone" class="span5" type="text" value="<?php print recoverPOST("phone"); ?>" tabindex="2" />
 			</p>
+			
+			
+			<p>
+				<?php print formSelect(array("name"=>"countries", "id" => "countries"), $options); ?>
+			</p>
+			
+			<p>
+				<select id="city" name="city">
+					<option>Debe seleccionar un País</option>
+				</select>
+			</p>
+			
 			
 			<p>
 				&raquo; <?php print __(_("Message")); ?> *<br />

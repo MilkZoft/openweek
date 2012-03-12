@@ -11,8 +11,8 @@ class Feedback_Controller extends ZP_Controller {
 	public function __construct() {		
 		$this->Feedback_Model = $this->model("Feedback_Model");
 		$this->Templates 	  = $this->core("Templates");
-		
-		$this->application = $this->app("feedback");
+		$this->helper("forms");
+		$this->application = "feedback";
 		
 		$this->Templates->theme(_webTheme);
 	}
@@ -24,6 +24,9 @@ class Feedback_Controller extends ZP_Controller {
 	private function feedback() {
 		$this->title("Feedback");
 		$this->CSS("feedback", $this->application);
+		$this->js("actions", $this->application);
+		
+		$vars["countries"] = $this->Feedback_Model->getCountries();
 		
 		if(POST("send")) {						
 			$vars["alert"] = $this->Feedback_Model->send();
@@ -36,4 +39,5 @@ class Feedback_Controller extends ZP_Controller {
 			$this->template("content", $vars);		
 		}
 	}
+
 }
